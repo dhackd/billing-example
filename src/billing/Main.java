@@ -21,7 +21,7 @@ public class Main {
     // 결과
     float result = 0.0f;
     // 사용량
-    int useElectric = 0;
+    float useElectric = 0.0f;
     // 기본요금
     int basicCharge = 0;
     // 전력량 요금
@@ -50,7 +50,7 @@ public class Main {
 
     // 250kWh 사용
     // 해당 부분은 kWh로 표현된 것이며 사용량에 따라 가격이 달라집니다.
-    useElectric = 230;
+    useElectric = 100f;
 
     // 기본요금 설정
     for (Integer qty_power : qtyPower) {
@@ -70,6 +70,7 @@ public class Main {
         num++;
         continue;
       }
+      num++;
       break;
     }
     System.out.println("전력요금 포지션 = " + num);
